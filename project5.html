@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu( )">&#9776;</div>
+        <ul class="nav-list" id="navList">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+  <header>
+    <h1>Nutrition</h1>
+  </header>
+
+  <section id="nutrition">
+    <div class="meal-tracking">
+      <h3>Meal Tracking</h3>
+      <p>Log your daily meals and track your calorie intake.</p>
+      <form id="mealForm">
+        <label for="meal">Meal:</label>
+        <input type="text" id="meal" name="meal" placeholder="Enter your meal" required>
+        <label for="calories">Calories:</label>
+        <input type="number" id="calories" name="calories" placeholder="Enter calories" required>
+        <button type="submit">Log Meal</button>
+      </form>
+    </div>
+
+    <div class="food-database">
+      <h3>Food Database</h3>
+      <p>Explore our food database to find nutritional information.</p>
+      <form id="foodSearchForm">
+        <input type="text" id="foodSearch" name="foodSearch" placeholder="Search for food">
+        <button type="submit">Search</button>
+      </form>
+      <div class="food-results">
+      </div>
+    </div>
+</section>
+
+  <script>
+    document.getElementById('mealForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Meal logged successfully!');
+    });
+
+    document.getElementById('foodSearchForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const searchData = [
+        { name: 'Apple', calories: 95, protein: 0.5, carbs: 25, fat: 0.3 },
+        { name: 'Chicken Breast', calories: 165, protein: 31, carbs: 0, fat: 3.6 },
+      ];
+
+      const searchResults = document.querySelector('.food-results');
+      searchResults.innerHTML = '';
+
+      const searchTerm = document.getElementById('foodSearch').value.toLowerCase();
+
+      const filteredResults = searchData.filter(item =>
+        item.name.toLowerCase().includes(searchTerm)
+      );
+
+      if (filteredResults.length > 0) {
+        filteredResults.forEach(result => {
+          const resultItem = document.createElement('div');
+          resultItem.classList.add('result-item');
+          resultItem.innerHTML = `<strong>${result.name}</strong> - 
+            Calories: ${result.calories}, Protein: ${result.protein}g, 
+            Carbs: ${result.carbs}g, Fat: ${result.fat}g`;
+
+          searchResults.appendChild(resultItem);
+        });
+      } else {
+        searchResults.innerHTML = '<p>No results found.</p>';
+      }
+    });
+  </script>
+
+</body>
+</html>

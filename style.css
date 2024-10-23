@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #e65b00;
+    overflow: hidden;
+}
+.navbar .menu-icon{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer alias;
+    display:none;
+    padding:10px;
+}
+.nav-list{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+.nav-list li{
+    float:left;
+}
+.nav-list li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+.nav-list li a:hover{
+    color: #e65b00;
+    background-color: #fff;
+}
+@media (max-width: 768px) {
+    .navbar .menu-icon {
+        display: block;
+    }
+    .nav-list{
+        display: none;
+        width:100px;
+        text-align: center;
+    }
+    .nav-list.show{
+        display: block;                
+    }
+}
+  
+  header {
+    background-color:#ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  section {
+    padding: 20px 40px;
+    margin: 20px 40px;
+    background-color:#e65b00;
+  }
+  #workouts h2 a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+  }
+  #workouts h2 a:hover{
+    color:white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+  #planner h2 a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+  }
+  #planner h2 a:hover{
+    color:white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+  #progress h2 a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+  }
+  #progress h2 a:hover{
+    color:white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+  #nutrition h2 a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+  }
+  #nutrition h2 a:hover{
+    color:white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+  #settings h2 a{
+    display: block;
+    color:black;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+  }
+  #settings h2 a:hover{
+    color:white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+  h4{
+    text-align:center;
+  }

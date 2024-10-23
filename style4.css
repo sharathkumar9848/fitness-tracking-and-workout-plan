@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #e65b00;
+    overflow: hidden;
+}
+.navbar .menu-icon{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer alias;
+    display:none;
+    padding:10px;
+}
+.nav-list{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+.nav-list li{
+    float:left;
+}
+.nav-list li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+.nav-list li a:hover{
+    color: #e65b00;
+    background-color: #fff;
+}
+@media (max-width: 768px) {
+    .navbar .menu-icon {
+        display: block;
+    }
+    .nav-list{
+        display: none;
+        width:100px;
+        text-align: center;
+    }
+    .nav-list.show{
+        display: block;                
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color:white;
+  }
+  
+  .progress-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .weight,
+  .measurements,
+  .workout-history {
+    flex: 1;
+    border: 1px;
+    padding: 10px;
+    margin: 1px;
+    background-color: #e65b00;
+  }
+  
+  form {
+    margin-top: 10px;
+  }
+  
+  form label,
+  form input,
+  form button {
+    margin-bottom: 5px;
+  }

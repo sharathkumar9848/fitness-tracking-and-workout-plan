@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image:url(long-exposure-pier.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    #message,.button,input,label{
+        display: flex;
+        flex-direction: column;
+        margin-left: 45%;
+    }
+    .b1{
+        margin-left: 45%;
+    }
+    h1,p{
+        text-align: center;
+    }
+    #feedback{
+        margin-top: 13%;
+    }
+    
+      
+      
+</style>
+<body>
+    
+
+  <section id="feedback">
+    <h1>Feedback</h1>
+
+    <div class="feedback-form">
+      <p>Your feedback is important to us. Please share your thoughts below:</p>
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <label for="message">Feedback:</label>
+        <textarea id="message" name="message" placeholder="Enter your feedback" rows="4"></textarea>
+        <button class="b1" type="submit">Submit Feedback</button>
+        <button class="b2"><a href="project.html">back</a></button>
+      </form>
+    </div>
+</section>
+<script>
+    document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+  
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      alert('Thank you, ${name}! Your feedback has been submitted:\nEmail: ${email}\nFeedback: ${message}');
+      
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

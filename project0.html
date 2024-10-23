@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(imgs/img.sign\ up.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 30vh;
+            bottom: 30vh;
+            overflow-y: hidden;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+
+
+        }
+
+        .login-container h2 {
+            color: black;
+            margin-top: 0;
+
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: calc(100%-20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .login-container button {
+            color: #ddd
+        }
+
+        .login-container button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" name="username"><br>
+            <input type="password" placeholder="Password" name="password"><br>
+            <button><a href="project.html">Login</a></button>
+            <button><a href="signup.html">Signup</a></button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img{
+            background-image: url(imgs/img..signup\ main.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            position: relative;
+            top: 30vh;
+            bottom:30vh;
+            overflow-y: hidden;
+        }
+    
+        .Signup{
+            width: 300px;
+            margin: auto;
+            padding:20px;
+            border-radius: 5px;
+            margin-top:0;
+            padding-top: 0;
+            
+        }
+        .Signup h1{
+            color:black;
+            margin:auto;
+            position:relative;
+            bottom:3%;
+
+    
+        }
+        .Signup input[type="text"],.Signup input[type="email"],.Signup input[type="Phonenumber"]{
+            width: calc(100%-20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body id="img">
+    <div class="Signup">
+        <h1>Signup</h1>
+    <form>
+        <input type="text"  name="Name" placeholder="Name" class="name">
+        <input type="email" name="email" placeholder="Email" class="email">
+        <input type="Phonenumber" name="Phonenumber" placeholder="Phonenumber" class="number">
+        <h4>Date of Birth:</h4>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>    
+        </select>
+        <select>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Aug</option>
+            <option>Sep</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option>    
+        </select>
+        <select>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>    
+        </select><br><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female"/>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Male"><br><br>
+        <button><a href="project0.html">back</a></button>
+        <button><a href="project.html">Submit</a></button>
+        
+
+    </form>
+    </div>
+</body>
+</html>
